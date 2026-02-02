@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💗</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCREEN 1 -->
+<div class="screen" id="s1">
+  <div class="card">
+    <h1>Hello handsome 😌</h1>
+    <p>I have something for you…<br>do you wanna see? 👀💗</p>
+    <div class="buttons">
+      <button id="yes1">Yes 😍</button>
+      <button id="no1">No 🙃</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCREEN 2 -->
+<div class="screen hidden" id="s2">
+  <div class="card">
+    <div class="chibi" id="chibi">
+      <span>👦🏻</span>
+      <span class="hands">🤝</span>
+      <span>👧🏻</span>
+    </div>
+    <p id="chibiText">Okay… just one more thing 🥺</p>
+    <button id="next2">Continue 💗</button>
+  </div>
+</div>
+
+<!-- SCREEN 3 -->
+<div class="screen hidden" id="s3">
+  <div class="card">
+    <h1>Are you happy with me?</h1>
+    <div class="buttons">
+      <button id="yes3">Yes 💗</button>
+      <button id="no3">No 🙃</button>
+    </div>
+    <p class="hidden" id="choice">Good choice, Mr. Tamang 😏</p>
+    <button class="hidden" id="next3">Yes 😌</button>
+  </div>
+</div>
+
+<!-- SCREEN 4 -->
+<div class="screen hidden" id="s4">
+  <div class="card">
+    <h1>Happy Birthday<br>my favourite person 💗</h1>
+    <p>
+      It’s your birthdayyy 🎉<br><br>
+      Which means you’re officially allowed extra cake,
+      extra naps, and unlimited bragging rights today 😌<br><br>
+      I hope this year holds love, peace,
+      and all the happiness you deserve 🤍
+    </p>
+    <button id="next4">Make a wish 🕯️</button>
+  </div>
+</div>
+
+<!-- SCREEN 5 -->
+<div class="screen hidden" id="s5">
+  <div class="card">
+    <h1>Make a wish 🕯️</h1>
+    <div class="cake">
+      🎂 <span id="candle">🕯️</span>
+    </div>
+    <p class="hidden" id="love">I love you 🤍</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

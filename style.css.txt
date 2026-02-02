@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Baloo 2', cursive;
+  background: linear-gradient(135deg, #ffd6eb, #ffffff);
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(255,182,193,0.4);
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #ff4d6d;
+  color: white;
+  font-family: inherit;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* No button movement */
+#no1, #no3 {
+  position: absolute;
+  background: #ffe3ec;
+  color: #ff4d6d;
+}
+
+/* Chibi animation */
+.chibi {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+  animation: sway 1.5s infinite ease-in-out;
+}
+
+@keyframes sway {
+  0%,100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+.hands {
+  font-size: 36px;
+}
+
+/* Hug + kiss */
+.chibi.hug::after {
+  content: "🤍";
+  font-size: 30px;
+}
+
+.chibi.kiss::after {
+  content: "💋";
+  font-size: 32px;
+  animation: pop 1s infinite;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.5); opacity: 0; }
+}
+
+/* Cake */
+.cake {
+  font-size: 70px;
+}
+
+#candle {
+  cursor: pointer;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  50% { opacity: 0.6; }
+}
